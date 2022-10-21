@@ -14,31 +14,37 @@ let count = 3;
             document.getElementById('life').innerText=count;
             if((inputNumber <= 5) && (inputNumber>=1)){
                 if(random == inputNumber){
+                    
+                    document.getElementById('main-bg').classList.remove('bg-danger')
+                    document.getElementById('main-bg').classList.add('bg-success')
                     document.getElementById('message-field').innerText="Yahoo!! You are correct"
                     document.getElementById('message-field').classList.remove('text-danger') 
                     document.getElementById('message-field').classList.add('text-success') 
                 }else{
                     document.getElementById('message-field').innerText="Oh ho!! You are wrong"
+                    document.getElementById('main-bg').classList.remove('bg-success')
+                    document.getElementById('main-bg').classList.add('bg-danger')
                     document.getElementById('message-field').classList.remove('text-success')
                     document.getElementById('message-field').classList.add('text-danger') 
-
-                }
-        
-            }else{
-            
+                    if(count==0){
+                        document.getElementById('answer-field').innerText=`The answer is ${random}`                     
+                    }
+                }     
+            }else{  
+            document.getElementById('main-bg').classList.remove('bg-success')         
             document.getElementById('message-field').innerText="Sorry!Please select a valid number"
+            document.getElementById('main-bg').classList.remove('bg-success')
+            document.getElementById('main-bg').classList.add('bg-danger')
             document.getElementById('message-field').classList.remove('text-success')
-            document.getElementById('message-field').classList.add('text-danger')
-        
+            document.getElementById('message-field').classList.add('text-danger')      
             }
         }else{
+            document.getElementById('main-bg').classList.remove('bg-success')
+            document.getElementById('main-bg').classList.add('bg-danger')
             document.getElementById('message-field').innerText="Sorry! You Have No Life"
             document.getElementById('message-field').classList.remove('text-success')
             document.getElementById('message-field').classList.add('text-danger') 
-        }
-
-
-        
+        }       
         })
 
 
