@@ -15,15 +15,17 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body style="background-color: rgb(180, 239, 254);">
+    
     <div style="height: 100vh;" class="position-relative">
-        <div class="container bg-primary p-5 position-absolute top-50 start-50 translate-middle rounded" id="main-bg">
-            <header>
-            <h1 class="text-center text-light fs-2">Guessing Game</h1>
+        <header>        
+            <p class="fs-1 fw-bold text-center text-primary position-absolute start-50 translate-middle-x w-75" id="header">Guessing Game - GG</p>
+        </header>
+        <main>
+            
+        <div class="container bg-primary p-5 position-absolute top-50 start-50 translate-middle border border-warning rounded-3" id="main-bg">
+    
             <p class="text-center text-light fs-3">Guess a number 1 to 5</p>
-            </header>
-
-            <main>
-                <div class="mainField w-75 mx-auto bg-warning p-3 rounded">
+                <div class="mainField w-75 mx-auto bg-warning p-3 rounded-3 border border-success rounded-3">
                     <p class="fs-4 text-primary fw-bold">Remaining Life : <span class="text-danger" id="life">3</span></p>
 
                     <input class="d-block fs-4 w-75 mx-auto rounded border-success" type="number" id="inputField" placeholder="Guess the number">
@@ -33,10 +35,9 @@
                     
                     <p class="fs-4 text-center" id="message-field"></p>
                     <p class="fs-4 text-center text-success" id="answer-field"></p>
-                </div>
-            </main>
-            
+                </div>      
         </div>
+        </main>
     </div>
 
     <!--JS Link -->
