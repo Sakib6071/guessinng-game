@@ -1,3 +1,6 @@
+document.getElementById('btn-restart').addEventListener('click',function(){
+    location.reload()
+})
 const random = Math.round(Math.random()*4+1)
 console.log(random);
 let count = 3;
@@ -41,7 +44,7 @@ let count = 3;
         }else{
             document.getElementById('main-bg').classList.remove('bg-success')
             document.getElementById('main-bg').classList.add('bg-danger')
-            document.getElementById('message-field').innerText="Sorry! You Have No Life"
+            document.getElementById('message-field').innerText="Sorry! You Have No Life.You can restart the match"
             document.getElementById('message-field').classList.remove('text-success')
             document.getElementById('message-field').classList.add('text-danger') 
         }       
