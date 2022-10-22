@@ -27,11 +27,11 @@ let count = 3;
                     document.getElementById('main-bg').classList.remove('bg-danger')
                     document.getElementById('main-bg').classList.add('bg-success')
                     document.getElementById('message-field').innerText="Yahoo!! You are correct"
-/*                     document.getElementById('message-field').innerHTML=`
+                    document.getElementById('audio-field').innerHTML=`
                             <audio autoplay>
                             <source src="resources/win.mp3" type="audio/mpeg">
                             </audio>    
-                    ` */
+                    `
                     document.getElementById('message-field').classList.remove('text-danger') 
                     document.getElementById('message-field').classList.add('text-success') 
                 }else{
@@ -40,11 +40,11 @@ let count = 3;
                     document.getElementById('main-bg').classList.add('bg-danger')
                     document.getElementById('message-field').classList.remove('text-success')
                     document.getElementById('message-field').classList.add('text-danger')
-/*                     document.getElementById('message-field').innerHTML=`
+                    document.getElementById('audio-field').innerHTML=`
                             <audio autoplay>
                             <source src="resources/lose.mp3" type="audio/mpeg">
                             </audio>    
-                    `  */
+                    ` 
                     if(count==0){
                         document.getElementById('answer-field').innerText=`The answer is ${random}`                     
                     }
@@ -56,11 +56,11 @@ let count = 3;
             document.getElementById('main-bg').classList.add('bg-danger')
             document.getElementById('message-field').classList.remove('text-success')
             document.getElementById('message-field').classList.add('text-danger') 
-/*             document.getElementById('message-field').innerHTML=`
+             document.getElementById('audio-field').innerHTML=`
                             <audio autoplay>
                             <source src="resources/lose.mp3" type="audio/mpeg">
                             </audio>    
-                    `   */    
+                    `      
             }
         }else{
             document.getElementById('main-bg').classList.remove('bg-success')
@@ -68,11 +68,11 @@ let count = 3;
             document.getElementById('message-field').innerText="Sorry! You Have No Life.You can restart the match"
             document.getElementById('message-field').classList.remove('text-success')
             document.getElementById('message-field').classList.add('text-danger') 
-/*             document.getElementById('message-field').innerHTML=`
+            document.getElementById('audio-field').innerHTML=`
                             <audio autoplay>
                             <source src="resources/lose.mp3" type="audio/mpeg">
                             </audio>    
-                    `  */
+                    ` 
         }       
         })
 
